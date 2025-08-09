@@ -233,7 +233,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Configuration EmailJS
         emailjs.init("uyMIXcMMk2VTF0Wcz");
         
         emailjs.send("service_txm627b", "template_0yrg3vi", {
@@ -253,13 +252,11 @@ if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Méthode plus fiable pour récupérer les valeurs
         const name = contactForm.querySelector('input[name="name"]').value;
         const email = contactForm.querySelector('input[name="email"]').value;
         const subject = contactForm.querySelector('input[name="subject"]').value;
         const message = contactForm.querySelector('textarea[name="message"]').value;
 
-        // Debug - vérifiez que les valeurs sont bien récupérées
         console.log('Données du formulaire:', { name, email, subject, message });
 
         if (!name || !email || !subject || !message) {
@@ -267,7 +264,6 @@ if (contactForm) {
             return;
         }
 
-        // Envoi avec EmailJS - utilisez les mêmes IDs que votre test réussi
         emailjs.send("service_txm627b", "template_0yrg3vi", {
             from_name: name,
             from_email: email,
