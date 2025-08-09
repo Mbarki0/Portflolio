@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed M'BARKI - Portfolio Interactif</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- ===== NAVIGATION BAR ===== -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="welcome-text">BIENVENU</span>
+            </a>
+            <span class="nav-logo-right">
+                <img src="assets/logo.png" alt="Logo" class="nav-logo-img">
+            </span>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- ===== HOME SECTION (HERO) ===== -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Mohammed M'BARKI</h1>
+                    <h2 class="hero-subtitle">Étudiant en Master Intelligence Artificielle</h2>
+                    <p class="hero-description">
+                        Motivé, rigoureux et agile, je recherche une alternance dans les domaines d'Intelligence Artificielle et/ou de Science des données pour contribuer à des projets innovants au croisement du cloud, des données et de l'IA.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="interactive-clock">
+                        <div class="clock-circle">
+                            <div class="menu-section section-accueil active" data-section="home">
+                                <a href="#home">Accueil</a>
+                            </div>
+                            <div class="menu-section section-apropos" data-section="about">
+                                <a href="#about">À propos</a>
+                            </div>
+                            <div class="menu-section section-projets" data-section="projects">
+                                <a href="#projects">Projets</a>
+                            </div>
+                            <div class="menu-section section-competences" data-section="skills">
+                                <a href="#skills">Compétences</a>
+                            </div>
+                            <div class="menu-section section-contact" data-section="contact">
+                                <a href="#contact">Contact</a>
+                            </div>
+                            <div id="clockHand" class="clock-hand"></div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="about-content animate-on-scroll">
+                    <div class="about-text">
+                        <p>
+                            Je suis Mohammed M'BARKI, un étudiant passionné par le développement et l'intelligence artificielle. Mon parcours m'a permis d'acquérir une solide base technique et une approche agile pour résoudre des problèmes complexes. Actuellement en Master 1 en Intelligence Artificielle (Master parcours Intelligence artificielle : fondements et applications (IAFA)) à l'université de Toulouse.
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>22</h3>
+                            <p>Ans</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3 </h3>
+                            <p>Stages professionnels</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Projets réalisés</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS SECTION ===== -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Mes Compétences Techniques</h2>
+                <div class="skills-grid">
+                    <div class="skill-category animate-on-scroll">
+                        <h3>Langages de programmation</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-file-code"></i>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cogs"></i>
+                                <span>C/C++</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>SQL, PL SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category animate-on-scroll">
+                        <h3>Data & IA</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Scikit-learn</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Pandas, NumPy</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Matplotlib, Seaborn</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-network-wired"></i>
+                                <span>TensorFlow, PyTorch</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category animate-on-scroll">
+                        <h3>Web & Bases de données</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML, CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-symfony"></i>
+                                <span>Symfony, PHP</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL, PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-aws"></i>
+                                <span>Oracle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS SECTION ===== -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Mes Expériences & Projets</h2>
+                <div class="projects-grid">
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="assets/pompiers_thumb.png" alt="thumb">
+                            <i class="fas fa-fire-extinguisher"> </i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Système d'aide à la décision pour pompiers</h3>
+                            <p>Développement d'un système pour optimiser les interventions des pompiers, avec conception et intégration d'une interface cartographique.</p>
+                            <div class="project-tech">
+                                <span>Master</span>
+                                <span>IA</span>
+                                <span>Décisionnel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <i class="fas fa-comments"></i>
+                            <img src="assets/chat_thumb.png" alt="thumb">
+                        </div>
+                        <div class="project-content">
+                            <h3>Chat multi-utilisateurs sécurisé</h3>
+                            <p>Développement d'un système de chat en respectant les principes des systèmes distribués, avec une interface conviviale.</p>
+                            <div class="project-tech">
+                                <span>C</span>
+                                <span>Java</span>
+                                <span>RMI</span>
+                                <span>TCP/UDP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="assets/DMN_thumb.png" alt="thumb">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Application web pour modèles décisionnels DMN</h3>
+                            <p>Application web permettant de visualiser des modèles décisionnels de type DMN directement dans un navigateur.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>TypeScript</span>
+                                <span>UML</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="assets/carto_thumb.png" alt="thumb">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Application web Carto-recherche</h3>
+                            <p>Application web pour la gestion et la conversion des données tabulaire avec une recherche intelligente</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Python</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contactez-moi</h2>
+                <div class="contact-content animate-on-scroll">
+                    <div class="contact-info">
+                        <h3>Informations de contact</h3>
+                        <p>N'hésitez pas à me contacter pour toute opportunité d'alternance ou de collaboration.</p>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>17 rue Sainte Catherine, Toulouse, France</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>mohammedmbarki960@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>(33) 7 44 28 11 27</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/mohammed-m-barki-3b8a3b1a2/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mohammed M'BARKI. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+    <!-- ===== MODAL CONTAINER ===== -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <h4 id="modalTitle"></h4>
+            <p id="modalMessage"></p>
+            <button id="modalCloseBtn" class="btn btn-primary">OK</button>
+        </div>
+    </div>
+    
+    <script src="main/script.js"></script>
+</body>
+</html>
